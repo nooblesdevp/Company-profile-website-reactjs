@@ -1,0 +1,107 @@
+$primary: #fff;
+$color: #242424;
+$color-red: #f00946;
+$color-blue: #276afb;
+$color-green: #25ce4a;
+
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 4px;
+    outline: auto;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+        
+}
+
+.btn--primary {
+    background: $primary;
+    color: $color;
+    border: 1px solid $primary;
+
+}
+
+.btn--outline {
+    background: transparent;
+    color: $primary;
+    padding: 8px 20px;
+    border: 1px solid $color ;
+    transition: all .3s ease-out;
+}
+
+.btn--medium {
+    padding: 8px 20px;
+    font-size: 18px;
+}
+
+.btn--large {
+    padding: 12px 26px;
+    font-size: 20px;
+}
+
+.btn--mobile {
+    text-align: center;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 24px;
+    background: transparent;
+    color: $primary;
+    padding: 14px 20px ;
+    border: 1px solid $color;
+    transition: all .3s ease-out;
+}
+
+.btn--large:hover, .btn--medium:hover, .btn--mobile:hover {
+    transition: all .3 ease-out;
+    background: $primary;
+    color: $color;
+}
+.btn--wide {
+    padding: 12px 64px;
+    font-size: 20px;
+    &:hover{
+        color: $primary;
+        background:$color-red;
+        transition: all .2s ease-out;
+    }
+}
+
+.btn-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 8px 16px;
+    height: 100%;
+    width: 100%;
+}
+
+.blue {
+    background: $color-blue;
+    color: $primary;
+    border: none;
+}
+.red {
+    background: $color-red;
+    color: $primary;
+    border: none;
+}
+.primary {
+    background: $color;
+    color: $primary;
+    border: none;
+    &:hover{
+        background: $primary;
+        color: $color;
+    }
+}
+.green {
+    background: $color-green;
+    color: $primary;
+    border: none;
+    &:hover{
+        background: $color;
+    }
+}
